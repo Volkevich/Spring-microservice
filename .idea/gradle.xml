@@ -7,6 +7,16 @@
         <compositeConfiguration>
           <compositeBuild compositeDefinitionSource="SCRIPT">
             <builds>
+              <build path="$PROJECT_DIR$/api-gateway" name="api-gateway">
+                <projects>
+                  <project path="$PROJECT_DIR$/api-gateway" />
+                </projects>
+              </build>
+              <build path="$PROJECT_DIR$/eurica-client" name="eurica-client">
+                <projects>
+                  <project path="$PROJECT_DIR$/eurica-client" />
+                </projects>
+              </build>
               <build path="$PROJECT_DIR$/spring-micro" name="spring-micro">
                 <projects>
                   <project path="$PROJECT_DIR$/spring-micro" />
@@ -20,7 +30,17 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/api-gateway" />
+            <option value="$PROJECT_DIR$/eurica-client" />
             <option value="$PROJECT_DIR$/spring-micro" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/api-gateway" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/api-gateway" />
           </set>
         </option>
       </GradleProjectSettings>
